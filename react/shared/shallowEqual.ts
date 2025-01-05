@@ -56,9 +56,9 @@ function shallowEqual(objA: any, objB: any): boolean {
 export default shallowEqual;
 
 /**
- * is와 shallowEqual의 차이는 비교의 깊이이다.
- * is의 경우 참조값이 다른 객체인 경우 false를 반환한다.
- * shallowEqual의 경우는 첫 번째 깊이에 존재하는 값까지 비교하여 결과를 반환한다.
+ ** is와 shallowEqual의 차이는 비교의 깊이이다.
+ ** is의 경우 참조값이 다른 객체인 경우 false를 반환한다.
+ ** shallowEqual의 경우는 첫 번째 깊이에 존재하는 값까지 비교하여 결과를 반환한다.
  */
 
 is({ name: 'hi' }, { name: 'hi' }); // 참조값이 다르므로 false
